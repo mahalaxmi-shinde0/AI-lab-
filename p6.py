@@ -1,21 +1,21 @@
 from collections import deque
 
 def bfs(graph, start):
-    visited = set()          # To keep track of visited nodes
-    queue = deque([start])   # Initialize queue with the starting node
+    visited = set()          
+    queue = deque([start])   
     
     while queue:
-        node = queue.popleft()   # Remove from front of the queue
+        node = queue.popleft()   
         if node not in visited:
-            print(node, end=" ") # Process the node (here we just print it)
+            print(node, end=" ") 
             visited.add(node)
             
-            # Add all unvisited neighbors to the queue
+           
             for neighbor in graph[node]:
                 if neighbor not in visited:
                     queue.append(neighbor)
 
-# Example usage:
+
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
