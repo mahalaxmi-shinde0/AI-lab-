@@ -1,4 +1,4 @@
-# Rational Agent to move towards a goal
+
 
 class RationalAgent:
     def __init__(self, goal):
@@ -11,12 +11,12 @@ class RationalAgent:
             print(f"Current Position: {self.position}")
         print("Reached the goal!")
 
-# Set a goal position
+
 goal_position = 5
 
-# Create a rational agent
+
 agent = RationalAgent(goal_position)
 
-# Move the agent towards the goal
+
 agent.move_towards_goal()
 
