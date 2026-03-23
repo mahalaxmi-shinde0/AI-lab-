@@ -18,7 +18,7 @@ def iddfs(graph, start, goal, max_depth):
     print("Goal not found")
 
 
-# ---- User Input Section ----
+
 graph = {}
 
 n = int(input("Enter number of nodes: "))
@@ -32,5 +32,4 @@ start = input("Enter start node: ")
 goal = input("Enter goal node: ")
 max_depth = int(input("Enter max depth: "))
 
-# Run IDDFS
 iddfs(graph, start, goal, max_depth)
